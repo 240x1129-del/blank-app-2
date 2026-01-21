@@ -39,7 +39,7 @@ def get_expenses_for_month(year: int, month: int):
     end = datetime(year, month, last_day, 23, 59, 59)
 
     conn = sqlite3.connect(DB_PATH)
-    cur = conn.cursor()
+    cur = conn.cursor)
     cur.execute(
         "SELECT dt, category, amount, memo FROM expenses WHERE dt BETWEEN ? AND ? ORDER BY dt ASC",
         (start.isoformat(), end.isoformat())
