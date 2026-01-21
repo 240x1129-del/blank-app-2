@@ -1,8 +1,15 @@
 import streamlit as st
 import sqlite3
 from pathlib import Path
-from datetime import datetime, date
+from datetime import datetime, timedelta, timezone
+JST = timezone(timedelta(hours=9))
+
 import pandas as pd
+
+dt = st.datetime_input("日時", value=datetime.now(JST))
+
+today = datetime.now(JST).date()
+
 
 st.set_page_config(page_title="収支管理", layout="wide")
 st.title("収支管理アプリ")
