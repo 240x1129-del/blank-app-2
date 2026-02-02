@@ -1,19 +1,49 @@
-# 🎈 Blank app template
+# 収支管理アプリ
 
-A simple Streamlit app template for you to modify!
+## 概要
+毎日の支出を入力すると、  
+月の目標金額に対して「今日使ってよい金額」を自動で判定してくれる  
+シンプルな収支管理アプリです。
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Python（Streamlit）を用いて作成しました。
 
-### How to run it on your own machine
+---
 
-1. Install the requirements
+## 主な機能
+- 月の目標金額を設定
+- 月の残り日数を入力
+- 今日の支出を入力
+- 支出が目標以内かを「黒字 / 注意 / 赤字」で判定
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+---
 
-2. Run the app
+## 使用技術
+- Python
+- Streamlit
+- GitHub
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+---
+
+## アプリURL
+以下のURLからアプリを試すことができます。
+
+https://blank-app-me2rpxwqjn8.streamlit.app/
+
+---
+
+## 工夫した点
+- その日の支出状況が一目で分かるように色分け表示を行いました
+- 数値入力だけで直感的に使えるUIを意識しました
+
+---
+
+## 大変だった点
+- Streamlit の設定
+- 外部サービス（データ保存）との連携
+- エラーの原因特定
+
+---
+
+## 今後の改善点
+- 月ごとの支出推移をグラフ表示
+- カテゴリ別の集計機能
