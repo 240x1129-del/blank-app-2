@@ -18,7 +18,7 @@ st.title("収支管理アプリ")
 # Supabase connection (Secrets)
 # =========================
 url = st.secrets["https://usdbxtlqadqskddcmvlj.supabase.co"]
-key = st.secrets["key = st.secrets["sb_publishable_2hfmskhVX673OB7fABwq4w_lyOjcNWC"]
+key = st.secrets["sb_publishable_2hfmskhVX673OB7fABwq4w_lyOjcNWC"]
 "]
 supabase = create_client(url, key)
 
