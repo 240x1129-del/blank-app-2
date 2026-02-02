@@ -17,6 +17,18 @@ https://blank-app-me2rpxwqjn8.streamlit.app/
 - 支出入力で **黒字 / 注意 / 赤字** を判定
 - （任意）カテゴリやメモで支出を整理
 
+## データベース（Supabase）
+本アプリでは Supabase をバックエンドのデータベースとして使用しています。
+支出データは Supabase 上のテーブルに保存され、アプリの再起動後もデータが保持されます。
+
+Streamlit Cloud 上では Secrets 機能を利用し、  
+Supabase の URL と API Key を安全に管理しています。
+
+## 使用した外部サービス
+- Supabase（データベース）
+  - 支出データの保存・取得に使用
+
+
 ## 使用技術
 - Python / Streamlit
 - GitHub
